@@ -27,6 +27,9 @@ docker build . -t rectangle-analyzer
 docker run rectangle-analyzer "1,2;3,4" "5,6;7,8"
 ```
 
+## Example cases
+![](examples.jpeg)
+
 ## Features
 
 - Logging with Log4j2
