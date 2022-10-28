@@ -19,8 +19,8 @@ public final class InputParser {
     }
 
     /**
-     * Parse input from program arguments into list of rectangles
-     * @param args arguments from stdin
+     * Parse input from program arguments.
+     * @param args program arguments
      * @return list of (2) rectangles
      */
     public static List<Rectangle> parseInput(final String[] args) {
@@ -35,6 +35,11 @@ public final class InputParser {
         return List.of(a, b);
     }
 
+    /**
+     * Parse a pair of points
+     * @param pair string representation of pair of points
+     * @return Point[] array of Points
+     */
     private static Point[] parsePair(final String pair) {
         String[] pointsString = pair.split(PAIR_DELIMITER);
         assertValidPair(pointsString);
@@ -46,6 +51,11 @@ public final class InputParser {
         return points;
     }
 
+    /**
+     * Parse a point into a pair of x, y
+     * @param point string representation of point
+     * @return parsed Point
+     */
     private static Point parsePoint(final String point) {
         String[] pointString = point.split(POINT_DELIMITER);
         assertValidPair(pointString);
@@ -58,6 +68,11 @@ public final class InputParser {
         }
     }
 
+    /**
+     * Assert given input is a pair (length 2)
+     * @param pair the pair to assert
+     * @throws InvalidInputException
+     */
     private static void assertValidPair(final String[] pair) {
         if (pair != null && pair.length != 2) {
             throw new InvalidInputException();

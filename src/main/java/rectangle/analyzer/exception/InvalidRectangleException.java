@@ -1,5 +1,8 @@
 package rectangle.analyzer.exception;
 
+/**
+ * Thrown when the rectangle parsed from input is not valid.
+ */
 public final class InvalidRectangleException extends IllegalArgumentException {
     public InvalidRectangleException() {
         super("Invalid rectangle. Check the input and ensure valid lower left "
