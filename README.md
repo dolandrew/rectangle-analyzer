@@ -36,6 +36,7 @@ docker run rectangle-analyzer "1,2;3,4" "5,6;7,8"
 - Junit5 unit and integration tests
 - Gradle build scans
 - Sonarqube static code analysis
+![](Sonarqube_results.png)
 - Jacoco test coverage report
 - Javadocs
 - Checkstyle
